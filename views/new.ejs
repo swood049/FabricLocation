@@ -1,0 +1,18 @@
+<% var foundItem = "empty"; %>
+<%-include partials/header %>
+<form action="/FabricStore" method=POST>
+    
+    <input class="form-control"type="text" name="name" placeholder="name">
+    <input class="form-control"type="number" name="price" placeholder="Price">
+    <input class="form-control"type="text" name="image" placeholder="image url">
+    <textarea type="text" name="description" placeholder="description of the fabric"></textarea>
+    <input class="form-control"type="number" name="quantity" placeholder="number of yards of fabric">
+    <input class="form-control"type="text" name="tagOne" placeholder="Enter a tag">
+    <input class="form-control"type="text" name="tagTwo" placeholder="Enter a tag">
+    <input class="form-control"type="text" name="tagThree" placeholder="Enter a category">
+    <input class="form-control"type="text" name="categoryOne" placeholder="Enter a category">
+    <input class="form-control"type="text" name="categoryTwo" placeholder="Enter a category">
+    <input class="form-control"type="text" name="categoryThree" placeholder="Enter a category">
+    <button>Submit</button>
+</form>
+<%-include partials/footer %>

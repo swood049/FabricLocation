@@ -1,0 +1,13 @@
+<% var foundItem = "empty"; %>
+<%-include partials/header %>
+
+<h1>Quilted Twins Clone!</h1>
+
+<% for(var i = 0; i < FabricItems.length; i++){ %>
+
+<div>
+    <p><%=FabricItems[i].name%></p>
+    <img src="<%= FabricItems[i].image %>">
+    <p><a href="/FabricStore/<%=FabricItems[i]._id%>" >See details of <%=FabricItems[i].name%></a></p>
+</div>
+<% } %>

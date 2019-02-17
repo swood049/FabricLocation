@@ -1,0 +1,21 @@
+
+<%-include partials/header %> 
+<div><%=foundItem.name %></div>
+<img src="<%=foundItem.image %>">
+<p><%=foundItem%></p>
+<div><%=foundItem.description %></div>
+
+
+
+    <!--This is the button to delete this fabric item-->
+<form action="/FabricStore/<%=foundItem._id%>?_method=DELETE" method = "POST">
+    <button>Delete</button>
+</form>
+<form action="/FabricStore/<%=foundItem._id%>/edit" method = "GET">
+    <button>Edit</button>
+</form>
+<form action="/FabricStore/" method ="GET">
+    <button>Return Home</button>
+</form>
+
+<%-include partials/footer %>

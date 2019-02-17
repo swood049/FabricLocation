@@ -1,0 +1,21 @@
+<%-include partials/header %> 
+<p><%=foundItem%></p>
+
+<form action="/FabricStore/<%=foundItem._id%>?_method=PUT" method="POST" >
+    <!-- pretending that everything in the forms fit inside here-->
+    <input class="form-control"type="text" name="name" value="<%=foundItem.name%>">
+    <input class="form-control"type="number" name="price" value="<%=foundItem.price%>">
+    <input class="form-control"type="text" name="image" value="<%=foundItem.image%>">
+    <textarea type="text" name="description"> <%foundItem.description%></textarea>
+    <input class="form-control"type="number" name="quantity" value="<%=foundItem.quantity%>">
+  <!--  <input class="form-control"type="text" name="tagOne" value=<%= //foundItem.meta.tags[0]%>>
+    <input class="form-control"type="text" name="tagTwo" value=<%= //foundItem.meta.tags[1] %>>
+    <input class="form-control"type="text" name="tagThree" value=<%= //foundItem.meta.tags[2] %>>
+    <input class="form-control"type="text" name="categoryOne" value=<%= //foundItem.meta.categories[0]%>>
+    <input class="form-control"type="text" name="categoryTwo" value=<%= //foundItem.meta.categories[1]%>>
+    <input class="form-control"type="text" name="categoryThree" value=<%= //foundItem.meta.categories[2]%>>
+-->
+    <button>Submit</button>
+    
+</form>
+<%-include partials/footer %>
